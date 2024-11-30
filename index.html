@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NextGen TechPro - Gadget Revolucionario</title>
+    <meta name="description" content="Descubre el último gadget tecnológico que transformará tu experiencia digital. Innovación, rendimiento y diseño en un solo dispositivo.">
+    <meta name="keywords" content="gadget tecnológico, dispositivo innovador, preventa tecnología, nuevo dispositivo tech">
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --accent-color: #27ae60;
+            --background-color: #f4f4f4;
+            --text-color: #333;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 15px;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: var(--accent-color);
+        }
+
+        .hero {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            text-align: center;
+            padding: 100px 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 10;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            max-width: 800px;
+            margin: 0 auto 30px;
+            font-size: 18px;
+        }
+
+        .cta-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background-color: var(--accent-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #2ecc71;
+        }
+
+        .features {
+            padding: 80px 0;
+            background-color: white;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .feature {
+            text-align: center;
+            padding: 30px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .feature:hover {
+            transform: translateY(-10px);
+        }
+
+        .feature img {
+            max-width: 100px;
+            margin-bottom: 20px;
+        }
+
+        .tech-specs {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .specs-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .spec {
+            background-color: rgba(255,255,255,0.1);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .pre-order {
+            background-color: #f4f4f4;
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .pre-order-form {
+            max-width: 500px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        @media (max-width: 768px) {
+            .features-grid,
+            .specs-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero h1 {
+                font-size: 32px;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <div class="logo">NextGen TechPro</div>
+            <nav>
+                <a href="#caracteristicas">Características</a>
+                <a href="#especificaciones">Especificaciones</a>
+                <a href="#preventa">Pre-venta</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container hero-content">
+                <h1>Descubre el Futuro en tus Manos</h1>
+                <p>Un gadget revolucionario que combina tecnología de punta, diseño innovador y funcionalidad sin precedentes. Prepárate para transformar tu experiencia digital.</p>
+                <div class="cta-buttons">
+                    <a href="#preventa" class="btn">Pre-ordenar Ahora</a>
+                    <a href="#caracteristicas" class="btn">Conocer Más</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="caracteristicas" class="features">
+            <div class="container">
+                <h2 style="text-align: center; margin-bottom: 50px;">Características Principales</h2>
+                <div class="features-grid">
+                    <div class="feature">
+                        <img src="/api/placeholder/100/100" alt="Innovación">
+                        <h3>Diseño Revolucionario</h3>
+                        <p>Tecnología de próxima generación en un diseño compacto y elegante.</p>
+                    </div>
+                    <div class="feature">
+                        <img src="/api/placeholder/100/100" alt="Rendimiento">
+                        <h3>Rendimiento Superior</h3>
+                        <p>Procesamiento ultrarrápido y eficiencia energética sin precedentes.</p>
+                    </div>
+                    <div class="feature">
+                        <img src="/api/placeholder/100/100" alt="Conectividad">
+                        <h3>Conectividad Inteligente</h3>
+                        <p>Múltiples opciones de conexión para una experiencia totalmente integrada.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="especificaciones" class="tech-specs">
+            <div class="container">
+                <h2>Especificaciones Técnicas</h2>
+                <div class="specs-grid">
+                    <div class="spec">
+                        <h3>Procesador</h3>
+                        <p>NextGen X1</p>
+                    </div>
+                    <div class="spec">
+                        <h3>Memoria</h3>
+                        <p>16 GB RAM</p>
+                    </div>
+                    <div class="spec">
+                        <h3>Almacenamiento</h3>
+                        <p>512 GB SSD</p>
+                    </div>
+                    <div class="spec">
+                        <h3>Batería</h3>
+                        <p>Hasta 20 hrs</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="preventa" class="pre-order">
+            <div class="container">
+                <h2>Pre-venta Exclusiva</h2>
+                <div class="pre-order-form">
+                    <form id="preOrderForm">
+                        <div class="form-group">
+                            <label for="name">Nombre Completo</label>
+                            <input type="text" id="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Correo Electrónico</label>
+                            <input type="email" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="quantity">Cantidad</label>
+                            <select id="quantity" required>
+                                <option value="">Selecciona cantidad</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn">Reservar Ahora</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 NextGen TechPro. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('preOrderForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const quantity = document.getElementById('quantity').value;
+            
+            alert(`¡Reserva confirmada!\n\nNombre: ${name}\nCorreo: ${email}\nCantidad: ${quantity}`);
+        });
+
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
