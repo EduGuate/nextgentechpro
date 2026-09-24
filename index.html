@@ -1,346 +1,215 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NextGen TechPro - Gadget Revolucionario</title>
-    <meta name="description" content="Descubre el último gadget tecnológico que transformará tu experiencia digital. Innovación, rendimiento y diseño en un solo dispositivo.">
-    <meta name="keywords" content="gadget tecnológico, dispositivo innovador, preventa tecnología, nuevo dispositivo tech">
-    <style>
-        :root {
-            --primary-color: #2c3e50;
-            --secondary-color: #3498db;
-            --accent-color: #27ae60;
-            --background-color: #f4f4f4;
-            --text-color: #333;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Arial', sans-serif;
-        }
-
-        body {
-            background-color: var(--background-color);
-            color: var(--text-color);
-            line-height: 1.6;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 15px;
-        }
-
-        header {
-            background-color: var(--primary-color);
-            color: white;
-            padding: 15px 0;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-
-        .header-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo {
-            font-size: 24px;
-            font-weight: bold;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin-left: 15px;
-            transition: color 0.3s ease;
-        }
-
-        nav a:hover {
-            color: var(--accent-color);
-        }
-
-        .hero {
-            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-            color: white;
-            text-align: center;
-            padding: 100px 0;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .hero-content {
-            position: relative;
-            z-index: 10;
-        }
-
-        .hero h1 {
-            font-size: 48px;
-            margin-bottom: 20px;
-        }
-
-        .hero p {
-            max-width: 800px;
-            margin: 0 auto 30px;
-            font-size: 18px;
-        }
-
-        .cta-buttons {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-        }
-
-        .btn {
-            display: inline-block;
-            padding: 12px 30px;
-            background-color: var(--accent-color);
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
-
-        .btn:hover {
-            background-color: #2ecc71;
-        }
-
-        .features {
-            padding: 80px 0;
-            background-color: white;
-        }
-
-        .features-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 30px;
-        }
-
-        .feature {
-            text-align: center;
-            padding: 30px;
-            background-color: #f9f9f9;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            transition: transform 0.3s ease;
-        }
-
-        .feature:hover {
-            transform: translateY(-10px);
-        }
-
-        .feature img {
-            max-width: 100px;
-            margin-bottom: 20px;
-        }
-
-        .tech-specs {
-            background-color: var(--primary-color);
-            color: white;
-            padding: 80px 0;
-            text-align: center;
-        }
-
-        .specs-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 30px;
-            margin-top: 40px;
-        }
-
-        .spec {
-            background-color: rgba(255,255,255,0.1);
-            padding: 20px;
-            border-radius: 10px;
-        }
-
-        .pre-order {
-            background-color: #f4f4f4;
-            padding: 80px 0;
-            text-align: center;
-        }
-
-        .pre-order-form {
-            max-width: 500px;
-            margin: 0 auto;
-            background-color: white;
-            padding: 40px;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-
-        .form-group {
-            margin-bottom: 20px;
-            text-align: left;
-        }
-
-        .form-group label {
-            display: block;
-            margin-bottom: 5px;
-        }
-
-        .form-group input,
-        .form-group select {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-        }
-
-        footer {
-            background-color: var(--primary-color);
-            color: white;
-            text-align: center;
-            padding: 20px 0;
-        }
-
-        @media (max-width: 768px) {
-            .features-grid,
-            .specs-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .hero h1 {
-                font-size: 32px;
-            }
-
-            .cta-buttons {
-                flex-direction: column;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NextGen TechPro — El futuro en tus manos · Free template</title>
+  <meta name="description" content="Plantilla gratuita en Bootstrap 5 para lanzamientos de producto tech: dispositivo 3D, cuenta regresiva, especificaciones y preventa. Licencia MIT.">
+  <meta name="theme-color" content="#050608">
+  <meta property="og:title" content="NextGen TechPro — Free product launch template">
+  <meta property="og:description" content="Plantilla gratuita en Bootstrap 5 para lanzar un gadget.">
+  <meta property="og:image" content="assets/og-image.jpg">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;800&family=Inter+Tight:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
 </head>
-<body>
-    <header>
-        <div class="container header-content">
-            <div class="logo">NextGen TechPro</div>
-            <nav>
-                <a href="#caracteristicas">Características</a>
-                <a href="#especificaciones">Especificaciones</a>
-                <a href="#preventa">Pre-venta</a>
-            </nav>
+<body id="top">
+  <a class="skip" href="#main">Saltar al contenido</a>
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <div class="free-bar">
+    <div class="container">
+      <span><b>FREE TEMPLATE</b> Plantilla de lanzamiento tech 100% gratis <span class="license">· Licencia MIT</span></span>
+      <a href="https://github.com/EduGuate/nextgentechpro" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i> Ver en GitHub</a>
+    </div>
+  </div>
+
+  <header class="site-nav">
+    <nav class="navbar navbar-expand-lg" data-bs-theme="dark" aria-label="Principal">
+      <div class="container">
+        <a class="brand" href="#top"><img src="favicon.svg" alt="" width="32" height="32"> <b>NEXTGEN<span>/X1</span></b></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Abrir menú"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
+            <li class="nav-item"><a class="nav-link" href="#features">Características</a></li>
+            <li class="nav-item"><a class="nav-link" href="#specs">Especificaciones</a></li>
+            <li class="nav-item"><a class="nav-link" href="#colors">Colores</a></li>
+            <li class="nav-item"><a class="btn-neon btn-sm-neon" href="#preorder">Pre-venta</a></li>
+          </ul>
         </div>
-    </header>
+      </div>
+    </nav>
+  </header>
 
-    <main>
-        <section class="hero">
-            <div class="container hero-content">
-                <h1>Descubre el Futuro en tus Manos</h1>
-                <p>Un gadget revolucionario que combina tecnología de punta, diseño innovador y funcionalidad sin precedentes. Prepárate para transformar tu experiencia digital.</p>
-                <div class="cta-buttons">
-                    <a href="#preventa" class="btn">Pre-ordenar Ahora</a>
-                    <a href="#caracteristicas" class="btn">Conocer Más</a>
-                </div>
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="beams" aria-hidden="true"><i></i><i></i><i></i></div>
+      <div class="container">
+        <div class="row align-items-center g-4 g-lg-5">
+          <div class="col-lg-6 hero-copy">
+            <p class="chip"><span class="dot"></span> Pre-venta exclusiva · unidades limitadas</p>
+            <h1>Descubre el futuro <span class="grad">en tus manos.</span></h1>
+            <p class="lead-text">Un gadget revolucionario que combina tecnología de punta, diseño innovador y funcionalidad sin precedentes. Prepárate para transformar tu experiencia digital.</p>
+            <div class="d-flex flex-wrap gap-3 mt-4">
+              <a class="btn-neon" href="#preorder">Pre-ordenar ahora <i class="bi bi-arrow-right"></i></a>
+              <a class="btn-line" href="#features">Conocer más</a>
             </div>
-        </section>
-
-        <section id="caracteristicas" class="features">
-            <div class="container">
-                <h2 style="text-align: center; margin-bottom: 50px;">Características Principales</h2>
-                <div class="features-grid">
-                    <div class="feature">
-                        <img src="/api/placeholder/100/100" alt="Innovación">
-                        <h3>Diseño Revolucionario</h3>
-                        <p>Tecnología de próxima generación en un diseño compacto y elegante.</p>
-                    </div>
-                    <div class="feature">
-                        <img src="/api/placeholder/100/100" alt="Rendimiento">
-                        <h3>Rendimiento Superior</h3>
-                        <p>Procesamiento ultrarrápido y eficiencia energética sin precedentes.</p>
-                    </div>
-                    <div class="feature">
-                        <img src="/api/placeholder/100/100" alt="Conectividad">
-                        <h3>Conectividad Inteligente</h3>
-                        <p>Múltiples opciones de conexión para una experiencia totalmente integrada.</p>
-                    </div>
-                </div>
+            <div class="countdown" aria-label="Tiempo restante de la pre-venta">
+              <span class="cd-label">La pre-venta cierra en</span>
+              <div class="cd-grid" id="countdown">
+                <div><b data-unit="d">00</b><small>días</small></div>
+                <div><b data-unit="h">00</b><small>horas</small></div>
+                <div><b data-unit="m">00</b><small>min</small></div>
+                <div><b data-unit="s">00</b><small>seg</small></div>
+              </div>
             </div>
-        </section>
-
-        <section id="especificaciones" class="tech-specs">
-            <div class="container">
-                <h2>Especificaciones Técnicas</h2>
-                <div class="specs-grid">
-                    <div class="spec">
-                        <h3>Procesador</h3>
-                        <p>NextGen X1</p>
-                    </div>
-                    <div class="spec">
-                        <h3>Memoria</h3>
-                        <p>16 GB RAM</p>
-                    </div>
-                    <div class="spec">
-                        <h3>Almacenamiento</h3>
-                        <p>512 GB SSD</p>
-                    </div>
-                    <div class="spec">
-                        <h3>Batería</h3>
-                        <p>Hasta 20 hrs</p>
-                    </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="stage" id="stage">
+              <div class="halo" aria-hidden="true"></div>
+              <div class="device" id="device" role="img" aria-label="Dispositivo NextGen X1 con pantalla encendida">
+                <div class="device-screen">
+                  <img src="assets/screen.webp" alt="" width="540" height="1140">
+                  <div class="ui">
+                    <span class="ui-time" id="ui-time">09:41</span>
+                    <div class="ui-ring"><svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="42"/><circle class="prog" cx="50" cy="50" r="42"/></svg><b>X1</b></div>
+                    <div class="ui-bars"><i></i><i></i><i></i><i></i><i></i></div>
+                  </div>
+                  <div class="glare"></div>
                 </div>
+                <span class="btn-side" aria-hidden="true"></span>
+              </div>
+              <div class="floor-shadow" aria-hidden="true"></div>
+              <div class="float-card fc1 glass"><i class="bi bi-lightning-charge-fill"></i><span><b>20 h</b> batería</span></div>
+              <div class="float-card fc2 glass"><i class="bi bi-cpu-fill"></i><span><b>X1</b> neural</span></div>
             </div>
-        </section>
-
-        <section id="preventa" class="pre-order">
-            <div class="container">
-                <h2>Pre-venta Exclusiva</h2>
-                <div class="pre-order-form">
-                    <form id="preOrderForm">
-                        <div class="form-group">
-                            <label for="name">Nombre Completo</label>
-                            <input type="text" id="name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Correo Electrónico</label>
-                            <input type="email" id="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="quantity">Cantidad</label>
-                            <select id="quantity" required>
-                                <option value="">Selecciona cantidad</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                            </select>
-                        </div>
-                        <button type="submit" class="btn">Reservar Ahora</button>
-                    </form>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 NextGen TechPro. Todos los derechos reservados.</p>
+          </div>
         </div>
-    </footer>
+      </div>
+    </section>
 
-    <script>
-        document.getElementById('preOrderForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const quantity = document.getElementById('quantity').value;
-            
-            alert(`¡Reserva confirmada!\n\nNombre: ${name}\nCorreo: ${email}\nCantidad: ${quantity}`);
-        });
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Diseño revolucionario</span><span>Chip NextGen X1</span><span>Wi-Fi 7</span><span>Carga rápida 65W</span><span>Pantalla 120Hz</span><span>Diseño revolucionario</span><span>Chip NextGen X1</span><span>Wi-Fi 7</span><span>Carga rápida 65W</span><span>Pantalla 120Hz</span>
+      </div>
+    </div>
 
-        // Smooth scrolling
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-    </script>
+    <!-- FEATURES -->
+    <section id="features" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">[ 01 ] Características principales</p>
+          <h2>Pensado para <span class="grad">lo que viene.</span></h2>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-4 reveal"><article class="feature spot"><span class="f-icon"><i class="bi bi-gem"></i></span><h3>Diseño revolucionario</h3><p>Tecnología de próxima generación en un diseño compacto y elegante de aluminio aeroespacial.</p></article></div>
+          <div class="col-md-4 reveal"><article class="feature spot"><span class="f-icon"><i class="bi bi-speedometer2"></i></span><h3>Rendimiento superior</h3><p>Procesamiento ultrarrápido y eficiencia energética sin precedentes gracias al chip X1.</p></article></div>
+          <div class="col-md-4 reveal"><article class="feature spot"><span class="f-icon"><i class="bi bi-broadcast"></i></span><h3>Conectividad inteligente</h3><p>Múltiples opciones de conexión para una experiencia totalmente integrada con tus dispositivos.</p></article></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SPECS -->
+    <section id="specs" class="section specs">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">[ 02 ] Especificaciones técnicas</p>
+          <h2>Números que <span class="grad">hablan solos.</span></h2>
+        </div>
+        <div class="spec-grid">
+          <div class="spec reveal"><small>Procesador</small><strong>NextGen X1</strong><span class="meter"><i style="--v:.95"></i></span><em>8 núcleos · 3.4 GHz</em></div>
+          <div class="spec reveal"><small>Memoria</small><strong><span data-count="16">0</span> GB</strong><span class="meter"><i style="--v:.8"></i></span><em>RAM LPDDR5X</em></div>
+          <div class="spec reveal"><small>Almacenamiento</small><strong><span data-count="512">0</span> GB</strong><span class="meter"><i style="--v:.7"></i></span><em>SSD NVMe</em></div>
+          <div class="spec reveal"><small>Batería</small><strong>Hasta <span data-count="20">0</span> h</strong><span class="meter"><i style="--v:.9"></i></span><em>Carga 0–80% en 30 min</em></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COLORS -->
+    <section id="colors" class="section">
+      <div class="container">
+        <div class="colors-card reveal">
+          <div>
+            <p class="eyebrow">[ 03 ] Elige tu estilo</p>
+            <h2>Tres acabados. <span class="grad">Una sola actitud.</span></h2>
+            <p class="muted">Selecciona un color y míralo en el dispositivo del inicio y en tu reserva.</p>
+          </div>
+          <div class="swatches" role="radiogroup" aria-label="Color del dispositivo">
+            <button class="swatch active" role="radio" aria-checked="true" data-color="grafito" style="--c1:#2a2f3a;--c2:#0c0e12"><span></span>Grafito</button>
+            <button class="swatch" role="radio" aria-checked="false" data-color="glaciar" style="--c1:#e6edf5;--c2:#9aa9bb"><span></span>Glaciar</button>
+            <button class="swatch" role="radio" aria-checked="false" data-color="neón" style="--c1:#1f6f5b;--c2:#0b2a24"><span></span>Neón</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PREORDER -->
+    <section id="preorder" class="section">
+      <div class="container">
+        <div class="row g-4 g-lg-5 align-items-center">
+          <div class="col-lg-5 reveal">
+            <p class="eyebrow">[ 04 ] Pre-venta exclusiva</p>
+            <h2>Sé de los <span class="grad">primeros.</span></h2>
+            <p class="muted">Reserva hoy sin cargo y asegura el precio de lanzamiento. Te avisaremos antes del envío.</p>
+            <ul class="perks">
+              <li><i class="bi bi-check2-circle"></i> Precio de lanzamiento garantizado</li>
+              <li><i class="bi bi-check2-circle"></i> Envío prioritario gratis</li>
+              <li><i class="bi bi-check2-circle"></i> Cancela cuando quieras</li>
+            </ul>
+          </div>
+          <div class="col-lg-7 reveal">
+            <form id="preOrderForm" class="order glass" novalidate>
+              <div class="row g-3">
+                <div class="col-sm-6"><label for="name" class="form-label">Nombre completo</label><input id="name" class="form-control" autocomplete="name" required maxlength="80" placeholder="Ej. Andrea López"></div>
+                <div class="col-sm-6"><label for="email" class="form-label">Correo electrónico</label><input id="email" type="email" class="form-control" autocomplete="email" required maxlength="120" placeholder="tu@correo.com"></div>
+                <div class="col-sm-6">
+                  <span class="form-label d-block" id="qty-label">Cantidad</span>
+                  <div class="stepper" role="group" aria-labelledby="qty-label"><button type="button" data-step="-1" aria-label="Menos">−</button><output id="qty">1</output><button type="button" data-step="1" aria-label="Más">+</button></div>
+                </div>
+                <div class="col-sm-6"><span class="form-label d-block">Color</span><div class="chosen" id="chosen-color">Grafito</div></div>
+              </div>
+              <div class="order-total"><span>Total estimado</span><strong>$<span id="order-total">499</span></strong></div>
+              <button class="btn-neon w-100" type="submit">Reservar ahora <i class="bi bi-arrow-right"></i></button>
+              <p class="form-status" id="form-status" role="status"></p>
+              <small class="muted">Demo: no se envían datos ni se procesan pagos. Precio de ejemplo en USD.</small>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FREE TEMPLATE -->
+    <section id="template" class="section pt-0">
+      <div class="container">
+        <div class="opensource reveal">
+          <div>
+            <span class="free-pill">FREE &amp; OPEN SOURCE</span>
+            <h2>Lanza tu producto. <span class="grad">Gratis.</span></h2>
+            <p class="muted">NextGen TechPro es una plantilla gratuita en Bootstrap 5 para lanzamientos de gadgets y productos tech: animada, responsive y con licencia MIT.</p>
+          </div>
+          <div class="os-actions">
+            <a class="btn-neon" href="https://github.com/EduGuate/nextgentechpro" target="_blank" rel="noopener noreferrer">Descargar en GitHub <i class="bi bi-arrow-up-right"></i></a>
+            <small class="muted">Sin registro. Sin tarjeta.</small>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a class="brand" href="#top"><img src="favicon.svg" alt="" width="26" height="26"> <b>NEXTGEN<span>/X1</span></b></a>
+      <span>© <span id="year"></span> NextGen TechPro · Plantilla de demostración</span>
+      <span class="footer-links"><a href="#template">FREE TEMPLATE ↗</a><a href="LICENSE">Licencia MIT</a><a href="#top">Volver arriba ↑</a></span>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
+  <script src="app.js" defer></script>
 </body>
 </html>
